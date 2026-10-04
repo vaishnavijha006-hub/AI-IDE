@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #1e1e1e;
+  color: #ffffff;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.ide {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  background: #181818;
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.actions button {
+  padding: 6px 12px;
+  background: #2d2d2d;
+  color: white;
+  border: 1px solid #444;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.workspace {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+}
+
+.sidebar {
+  width: 220px;
+  background: #181818;
+  border-right: 1px solid #333;
+  padding: 12px;
+}
+
+.sidebar h3,
+.ai-panel h3 {
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 0;
+}
+
+.file {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.file.active {
+  background: #2d2d2d;
+}
+
+.editor {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.tab {
+  height: 36px;
+  padding: 10px 14px;
+  background: #1e1e1e;
+  border-bottom: 1px solid #333;
+  font-size: 13px;
+}
+
+.ai-panel {
+  width: 320px;
+  background: #181818;
+  border-left: 1px solid #333;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ai-message {
+  font-size: 13px;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.chat-box {
+  margin-top: auto;
+  display: flex;
+  gap: 6px;
+}
+
+.chat-box input {
+  flex: 1;
+  background: #2d2d2d;
+  border: 1px solid #444;
+  color: white;
+  padding: 8px;
+}
+
+.chat-box button {
+  background: #2d2d2d;
+  color: white;
+  border: 1px solid #444;
+  padding: 8px 12px;
+}
+
+.terminal {
+  height: 160px;
+  background: #111;
+  border-top: 1px solid #333;
+}
+
+.terminal-title {
+  padding: 8px 12px;
+  font-size: 12px;
+  color: #aaa;
+  border-bottom: 1px solid #333;
+}
+
+.terminal-content {
+  padding: 12px;
+  font-family: monospace;
+  font-size: 13px;
+  color: #ccc;
+}
